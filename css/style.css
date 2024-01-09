@@ -1,12 +1,24 @@
-.main{
+.body{
+    background: linear-gradient(#e66465, #9198e5);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+.container{
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 20vh;
+    color: white;
+    text-align: center;
     > .title{
         font-size: 2.5rem;
     }
+    > .iconsContainer{
+        font-size: 30px;
+    }
     > .subTitle{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 };
+

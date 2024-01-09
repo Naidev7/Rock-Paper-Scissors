@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock, paper, scissors</title>
+    <title>Piedra papel o tijeras</title>
     <link rel="stylesheet" href="./css/style.css">
-<body>
-    <main class="main">
-    <h1 class="title">Juego Piedra, Papel y Tijeras</h1>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body class="body">
+    <div class="container">
+    <h1 class="title">Disfruta jugando a piedra, papel o Tijeras</h1>
+    <span class="iconsContainer">
+        <i class="fa-solid fa-hand-back-fist fa-beat"></i>
+        <i class="fa-solid fa-hand fa-beat-fade"></i>
+        <i class="fa-solid fa-hand-scissors fa-beat"></i>
+    </span>
     <h2 class="subTitle">Introduce aquí tu jugada:</h2>
     <form class="formContainer">
-        <select>
-            <option value="js-selection">Seleccione su jugada</option>
-            <option value="Piedra">Piedra</option>
-            <option value="Papel">Papel</option>
-            <option value="Tijeras">Tijeras</option>
+        <select class="js-selection">
+            <option >Seleccione su jugada</option>
+            <option >Piedra</option>
+            <option >Papel</option>
+            <option>Tijeras</option>
         </select>
         <input type="button" value="Jugar" class="js-formBtn">
     </form>
     <h3 class="js-varText">vamos a jugar!</h3>
-    <p class="js-resultJugadora"></p>
-    <p class="js-pText"></p>
-    </main>
+    <p>Jugadora: <span class="js-resultJugadora">0</span> </p>
+    <p>Ordenador: <span class="js-pText"></span>0 </p>
+</div>
     <script src="./js/main.js"></script>
 </body>
 </html>

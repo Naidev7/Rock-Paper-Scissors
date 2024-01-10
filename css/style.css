@@ -2,7 +2,7 @@
     background: linear-gradient(#e66465, #9198e5);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100vh;
+    height: 80vh;
 }
 .container{
     display: flex;
@@ -11,14 +11,16 @@
     margin-top: 20vh;
     color: white;
     text-align: center;
+    gap: 20px;
     > .title{
         font-size: 2.5rem;
+        font-weight: 900;
     }
     > .iconsContainer{
         font-size: 30px;
     }
     > .subTitle{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 };
 

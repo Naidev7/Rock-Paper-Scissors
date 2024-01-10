@@ -5,7 +5,8 @@ const btnStart = document.querySelector('.js-formBtn');
 let varText = document.querySelector('.js-varText');
 const resultJugadora = document.querySelector('.js-resultJugadora');
 const resultPc = document.querySelector('.js-pText');
-
+let accJugadora = 0;
+let accPc = 0;
 
 const pcMovement = (randomNumber)=>{
     if(randomNumber <= 3){
@@ -25,31 +26,44 @@ const valuePc = ()=>{
 
 const playGame = ()=>{
     const pcValue = valuePc();
-    const userSelection = selection.value;
+    const userSelection = selection.value.toLowerCase();
      if(userSelection === pcValue){
-        varText.innerHTML  = 'Empate';
-    } else if(userSelection === 'piedra'){
+        renderReturn ('Empate');
+    } 
+    else if(userSelection === 'piedra'){
         if(pcValue === 'tijeras'){
-            varText.innerHTML  = 'has ganado';
+            renderReturn ('¡Has ganado!');
+           accJugadora ++;
         }else{
-            varText.innerHTML  = 'has perdido';
+            renderReturn ('Has perdido...');
+            accPc++;
         }
-    } else if(userSelection === 'papel'){
+    } 
+    else if(userSelection === 'papel'){
         if(pcValue === 'tijeras'){
-            varText.innerHTML  = 'has perdido';
+            renderReturn ('Has perdido...');
+            accPc++;
         }else{
-            varText.innerHTML  = 'has ganado';
+            renderReturn ('¡Has ganado!');
+            accJugadora ++;
         }
     } else{
         if(pcValue === 'piedra'){
-            varText.innerHTML  = 'has perdido';
+            renderReturn ('Has perdido...');
+            accPc++;
         } else{
-            varText.innerHTML  = 'has ganado';
+            renderReturn ('¡Has ganado!');
+            accJugadora ++;
         }
     }
-    console.log(pcValue, userSelection);
+    /*console.log(pcValue, userSelection, accJugadora, accPc);*/
 };
 
+function renderReturn (text){
+    varText.innerHTML = text;
+    resultJugadora.innerHTML = accJugadora;
+    resultPc.innerHTML = accPc;
+}
 
 function handleClick(event) {
     event.preventDefault();

@@ -5,6 +5,7 @@
     height: 80vh;
 }
 .container{
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -22,5 +23,9 @@
     > .subTitle{
         font-size: 1.5rem;
     }
+    > .input{
+        background-color:#9198e5;
+    }
 };
+
 

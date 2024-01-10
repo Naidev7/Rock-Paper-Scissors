@@ -55,8 +55,10 @@ const playGame = () => {
 
 const contador = ( sumAcc) => {
   if (sumAcc === 11) {
+    varText.innerHTML = '¡Vamos a jugar!'
     resultJugadora.innerHTML = '';
     resultPc.innerHTML = '';
+
   }
 };
 

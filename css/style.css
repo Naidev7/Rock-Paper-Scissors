@@ -16,16 +16,18 @@
     > .title{
         font-size: 2.5rem;
         font-weight: 900;
-    }
+    };
     > .iconsContainer{
         font-size: 30px;
-    }
+    };
     > .subTitle{
         font-size: 1.5rem;
+    };
+    > .playBtn{
+        background-color: palegreen;
     }
-    > .input{
-        background-color:#9198e5;
-    }
+    
 };
+
 
 

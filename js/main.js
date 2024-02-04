@@ -5,6 +5,8 @@ const btnStart = document.querySelector(".js-formBtn");
 let varText = document.querySelector(".js-varText");
 const resultJugadora = document.querySelector(".js-resultJugadora");
 const resultPc = document.querySelector(".js-pText");
+const resetBtn = document.querySelector('.js-resetBtn');
+
 let accJugadora = 0;
 let accPc = 0;
 
@@ -58,7 +60,6 @@ const contador = ( sumAcc) => {
     varText.innerHTML = '¡Vamos a jugar!'
     resultJugadora.innerHTML = '';
     resultPc.innerHTML = '';
-
   }
 };
 
@@ -77,3 +78,4 @@ function handleClick(event) {
 }
 
 btnStart.addEventListener("click", handleClick);
+

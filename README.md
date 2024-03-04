@@ -2,6 +2,8 @@
 # Rock Paper Scissors Game
 Welcome to the Rock Paper Scissors game project developed entirely with vanilla JavaScript, HTML, and CSS! This project was created when I first started learning JavaScript, aiming to work with the various common methods and functionalities of JavaScript in a simple and entertaining practice.
 
+<img width="1015" alt="Captura de pantalla 2024-02-25 205756" src="https://github.com/Naidev7/Rock-Paper-Scissors/assets/150022253/c44cd58b-6d7a-45da-86e8-2349a6b7fdff">
+
 ## Project Overview
 This project implements the classic game of Rock Paper Scissors using basic JavaScript functionalities. It allows users to play against the computer by selecting their choice of rock, paper, or scissors, and then compares it with the computer's random choice to determine the winner.
 
